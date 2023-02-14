@@ -4,10 +4,44 @@
   box-sizing: border-box;
 }
 
+.center-page {
+  width: 60%;
+  margin: 0 auto;
+}
+
 body {
   background-color: #f6f8f9;
   font-family: Arial, Helvetica, sans-serif ;
+  color: #444851;
 }
+
+.list h3{
+  padding-top: 30px;
+}
+
+.list h3::before {
+  content: "\25BC";
+  color: #444851;  
+}
+
+.list .text-task.cross::before {
+  content: "\274C";
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.list .text-task.check::before {
+  content: "\2713";
+  color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+
 
 header .main-title {
   background-color: white;
@@ -21,4 +55,57 @@ header img {
 header h1 {
   display: inline-block;
   color: #031830;
+}
+
+main .buttons {
+  width: 100%;
+  background-color: white;
+  margin: 20px 10px 2px 0;
+  padding-left: 50px;
+  border-radius: 2px;
+}
+
+main .buttons .add {
+  display: inline-block;
+}
+
+main .buttons .task {
+  background-color: #47adf1;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+  font-size: .8rem;
+  margin: 5px 5px 5px 0;
+}
+
+main .buttons .section {
+  border: 1px solid #d3d7db;
+  border-radius: 3px;
+  color: #d3d7db;
+  padding: 5px;
+  font-size: .8rem;
+  margin: 5px 5px 5px 0;
+}
+
+main .list {
+  background-color: white;
+  padding-left: 50px;
+  border-radius: 5px;
+}
+
+main .list .text-task {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.list .label {
+  padding:  7px;
+  border-radius: 10px;
+  font-size: .7rem;
+  color: white;
+  display: inline-block;
+}
+
+.list .label.editorial {
+  background-color: #45abea;
 }
