@@ -109,3 +109,23 @@ main .list .text-task {
 .list .label.editorial {
   background-color: #45abea;
 }
+
+.list .label.goals {
+  background-color: #9c72e4;
+}
+
+.list .label.recruiting {
+  background-color: #64c0a9;
+}
+
+.list .label.mobile {
+  background-color: #f29e33;
+}
+
+.list .label.website {
+  background-color: #d863a1;
+}
+
+.list .label.sales {
+  background-color: #b0c926;
+}
